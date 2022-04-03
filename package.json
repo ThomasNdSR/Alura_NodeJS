@@ -1,17 +1,26 @@
 {
   "name": "lib-markdown",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "lib para extrair padrões de link de arquivos markdown",
+  "keywords": [
+    "markdown",
+    "URL"
+  ],
+  "main": "./cli.js",
+  "bin": {
+    "lib-markdown": "./cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./test",
     "cli": "node cli.js ./arquivos/texto1.md"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "homepage": "https://github.com/ThomasNdSR/Alura_NodeJS.git",
   "dependencies": {
     "chalk": "^4.1.2",
-    "node-fetch": "^3.2.3"
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
